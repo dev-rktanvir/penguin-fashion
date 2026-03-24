@@ -29,11 +29,12 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header class="bg-[#FFFBF0]">
         <!-- Navbar -->
-        <nav class="container mx-auto px-3 py-5 flex items-center justify-between">
+        <nav
+            class="container mx-auto px-3 py-5 lg:bg-[url(/icons/bar.png)] bg-no-repeat bg-top flex items-center justify-between">
             <!-- Logo -->
-            <div>
+            <div class="cursor-pointer">
                 <img class="w-[192px] lg:w-[290px]" src="/icons/logo.png" alt="">
             </div>
 
@@ -50,6 +51,30 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Hero section -->
+        <section
+            class="container mx-auto px-3 pt-10 pb-16 md:pb-32 flex gap-20 md:gap-0 flex-col md:flex-row items-center justify-between">
+            <!-- Content part -->
+            <div>
+                <h1 class="text-6xl md:text-7xl text-secondary"><span class="text-primary">Be the Penguins</span><br>of
+                    Winter</h1>
+                <p class="text-base leading-6 text-accent md:w-3/4 my-3">
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.
+                </p>
+                <button
+                    class="px-8 py-4 rounded-lg text-base font-medium text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex items-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    BUY NOW
+                </button>
+            </div>
+
+            <!-- Image part -->
+            <div>
+                <img class="w-full" src="/images/model.png" alt="">
+            </div>
+        </section>
     </header>
 
     <!-- Main -->
